@@ -1,8 +1,24 @@
-# Cloud Microservice Node
+---
+title: Cloud Runtime Metric Monitor
+emoji: 📊
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 7860
+pinned: false
+license: mit
+---
 
-Containerized Node.js stateless microservice designed for low-overhead container hosting on Back4App Containers or similar PaaS providers.
+# Cloud Runtime Metric Monitor
+
+A lightweight, zero-dependency Node.js system telemetry and edge microservice health demonstration.
 
 ## Features
-- Standard zero-dependency Node.js HTTP runtime
-- `/health` JSON monitoring probe
-- Clean minimal Alpine Docker image
+- Real-time memory footprint and process uptime telemetry
+- Dual-mode port adaptation (supports container default 7860 and PaaS injected PORT)
+- Responsive dark-mode dashboard for container runtime inspection
+- Standardized `/health` probe for cloud uptime monitors
+
+## API Endpoints
+- `GET /`: Interactive web telemetry dashboard
+- `GET /health`: JSON status probe for orchestrators
